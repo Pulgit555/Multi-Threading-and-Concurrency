@@ -1,0 +1,45 @@
+There are type of merge sorts used ->
+1) Merge sort
+2) Concurrent Merge sort
+3) Threaded Merge sort
+here merge sort is modified merge sort ,if number of elements in the array at a time of breaking is less than 5 then used selection sort . 
+
+There are four major functions used ->
+
+1) n_mergesort ->this is used to implement normal merge sort .In this function it breaks the array in two sub-parts recursively and calling merging function to merge the two-parts after sorting it.If size of subpart becomes less than 5 ,selection sort is used.
+
+2) c_mergesort ->this is used to implement concurrent merge sort. In this function, maked two child processes recursively using fork() , one for left sub-part and other for right sub-part . In this case also,If size of subpart becomes less than 5 ,selection sort is used. Since they are child processes and we want to make changes in a single array for that we used shareMem function.
+
+3) t_mergesort ->this is used to implement threaded merge sort. In this function, created two threads recursively one for left sub-part and other for right sub_part.In this case also,If size of subpart becomes less than 5 ,selection sort is used. 
+
+4) merging ->this is used to implement merging the two sub-parts in all the above cases.
+
+Results-> 
+
+For n=10 
+	time taken for normal mergesort     = 0.000021
+	time taken for concurrent mergesort = 0.001129
+	time taken for threaded mergesort   = 0.000637
+Normal mergesort is 53.880288 times faster than concurrent mergesort
+Normal mergesort is 30.369468 times faster than threaded mergesort	
+
+For n=100
+	time taken for normal mergesort     = 0.000383
+	time taken for concurrent mergesort = 0.009967
+	time taken for threaded mergesort   = 0.008095
+Normal mergesort is 26.047318 times faster than concurrent mergesort
+Normal mergesort is 21.154636 times faster than threaded mergesort
+
+For n=1000
+	time taken for normal mergesort     = 0.001077
+	time taken for concurrent mergesort = 0.034633
+	time taken for threaded mergesort   = 0.010473
+Normal mergesort is 32.169897 times faster than concurrent mergesort
+Normal mergesort is 9.728397 times faster than threaded mergesort
+
+Comparison ->
+Concurrent merge sort takes more time than normal merge sort due to the creation of processes which increases context switches and uses shared memory which takes more time in accessing data. 
+Threaded merge sort takes more time than normal merge sort due to creation of so many threads which do very minimal work. 
+
+Conclusion -> 
+Normal merge sort is faster than concurrent and threaded merge sort.
