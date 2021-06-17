@@ -3,8 +3,8 @@
 ensuring a nice management of 5 types of musicians to perform on 2 types of stages along with maximum waiting time, it uses semaphores, mutexes and threads.
 
 ## How to Run ?
-compile the code using `gcc q3.c -lpthread`
-and run the code using `./a.out`
+- compile the code using `gcc q3.c -lpthread`
+- and run the code using `./a.out`
 
 ### Question Overview
 - There are a acoustic and e electric stages.
