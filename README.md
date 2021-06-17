@@ -9,4 +9,4 @@ Implemented concurrent merge-sort (one using processes and other using threads )
  3. **Musical Mayhem**
  Simulated System ensuring a nice management of 5 types of musicians to perform on 2 types of stages along with maximum waiting time . It uses semaphores, mutexes and threads
 
- *More description for all the three questions are provided in their respective Readme file*
+ *More description for the above three questions are provided in their respective Readme file*
