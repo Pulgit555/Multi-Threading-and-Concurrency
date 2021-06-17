@@ -3,8 +3,8 @@
 Where Pharmaceutical Company produces vaccines and deliver the vaccine to Vaccination Zone, where It simultaneously create zones and vaccinate students using mutexe locks and threads.
 
 ## How to Run ?
-compile the code using `gcc q2.c -lpthread`
-and run the code using `./a.out`
+- compile the code using `gcc q2.c -lpthread` 
+- and run the code using `./a.out`
 
 ### Question Overview
 - **n Pharmaceutical Companies**
