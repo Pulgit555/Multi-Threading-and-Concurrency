@@ -1,4 +1,4 @@
-There are type of merge sorts used ->
+There are three types of merge sort used ->
 1) Merge sort
 2) Concurrent Merge sort
 3) Threaded Merge sort
